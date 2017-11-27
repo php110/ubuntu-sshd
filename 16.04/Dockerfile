@@ -1,4 +1,4 @@
-FROM       ubuntu:16.04
+FROM ubuntu:16.04
 
 RUN apt-get update
 
@@ -12,4 +12,4 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 
 EXPOSE 22
 
-CMD    ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd", "-D"]
